@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,10 +7,10 @@
     tools:context=".Shop_Clothes_Fragment">
 
     <TextView
+        android:id="@+id/MoneyView"
         android:layout_width="150dp"
         android:layout_height="70dp"
         android:textSize="20sp"
-        android:id="@+id/MoneyView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.05"
@@ -20,12 +19,12 @@
         app:layout_constraintVertical_bias="0.02" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:padding="20dp"
         android:id="@+id/constraintLayout"
         android:layout_width="wrap_content"
-        android:layout_height="180dp"
-        android:layout_margin="25dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
         android:background="#FFE4C6"
+        android:padding="20dp"
         app:layout_constraintBottom_toTopOf="@+id/constraintLayout1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,41 +32,43 @@
 
         <ImageView
             android:id="@+id/ItemImage"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@drawable/delbtn"
+            android:layout_width="101dp"
+            android:layout_height="101dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:tint="@android:color/white" />
 
         <TextView
-            android:textColor="@android:color/black"
             android:id="@+id/NameView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
+            android:layout_marginStart="50dp"
+            android:text="가구 이름"
+            android:textColor="@android:color/black"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/ItemImage"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:textColor="@android:color/black"
             android:id="@+id/ContentView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginVertical="2dp"
+            android:text="간단 설명"
+            android:textColor="@android:color/black"
             android:textSize="14dp"
             app:layout_constraintEnd_toEndOf="@+id/NameView"
             app:layout_constraintStart_toStartOf="@+id/NameView"
             app:layout_constraintTop_toBottomOf="@+id/NameView" />
 
         <TextView
-            android:textColor="@android:color/black"
             android:id="@+id/PriceView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="가격"
+            android:textColor="@android:color/black"
             android:textSize="18sp"
             app:layout_constraintBottom_toTopOf="@+id/BuyButton"
             app:layout_constraintEnd_toEndOf="@+id/ContentView"
@@ -75,18 +76,18 @@
             app:layout_constraintTop_toBottomOf="@+id/ContentView" />
 
         <Button
-            android:textColor="@android:color/black"
             android:id="@+id/BuyButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="#FCC372"
             android:text="구입"
+            android:textColor="@android:color/black"
             android:textSize="18dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/PriceView"
             app:layout_constraintStart_toStartOf="@+id/PriceView" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout1"
@@ -98,151 +99,169 @@
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
 
         <Button
-            android:elevation="0dp"
             android:id="@+id/gotobed"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:background="@drawable/strokewhite"
+            android:elevation="0dp"
             android:text="Beds"
             app:layout_constraintEnd_toStartOf="@+id/gotocloset"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:elevation="0dp"
             android:id="@+id/gotocloset"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:background="@drawable/strokewhite"
+            android:elevation="0dp"
             android:text="Closets"
             app:layout_constraintEnd_toStartOf="@id/gotocloth"
             app:layout_constraintStart_toEndOf="@+id/gotobed"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:elevation="0dp"
             android:id="@+id/gotocloth"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:background="@drawable/strokedark"
+            android:background="@drawable/strokewhite"
+            android:elevation="0dp"
             android:text="Clothes"
             app:layout_constraintEnd_toStartOf="@id/gotofloor"
             app:layout_constraintStart_toEndOf="@+id/gotocloset"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:elevation="0dp"
             android:id="@+id/gotofloor"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:background="@drawable/strokewhite"
+            android:elevation="0dp"
             android:text="Floors"
             app:layout_constraintEnd_toStartOf="@id/gotohat"
             app:layout_constraintStart_toEndOf="@+id/gotocloth"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:elevation="0dp"
             android:id="@+id/gotohat"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:background="@drawable/strokewhite"
+            android:elevation="0dp"
             android:text="Hats"
             app:layout_constraintEnd_toStartOf="@id/gotowall"
             app:layout_constraintStart_toEndOf="@+id/gotofloor"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:elevation="0dp"
             android:id="@+id/gotowall"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:background="@drawable/strokewhite"
+            android:background="@drawable/strokedark"
+            android:elevation="0dp"
             android:text="Walls"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/gotohat"
             app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:background="#FFE4C6"
-            android:padding="10dp"
+            android:id="@+id/constraintLayout3"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="#FFE4C6"
+            android:padding="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout4"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/gotofloor">
 
             <ImageButton
-                android:elevation="0dp"
-                app:layout_constraintHorizontal_chainStyle="packed"
                 android:id="@+id/slot1"
-                android:layout_width="125dp"
-                android:layout_height="125dp"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
                 android:backgroundTint="@android:color/white"
+                android:elevation="0dp"
                 android:tint="#FFE4C6"
+                app:layout_constraintBottom_toTopOf="@+id/slot4"
                 app:layout_constraintEnd_toStartOf="@+id/slot2"
+                app:layout_constraintHorizontal_chainStyle="packed"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageButton
-                android:elevation="0dp"
-                android:layout_marginHorizontal="10dp"
                 android:id="@+id/slot2"
-                android:layout_width="125dp"
-                android:layout_height="125dp"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginHorizontal="10dp"
                 android:backgroundTint="@android:color/white"
+                android:elevation="0dp"
                 android:tint="#FFE4C6"
+                app:layout_constraintBottom_toTopOf="@+id/slot5"
                 app:layout_constraintEnd_toStartOf="@+id/slot3"
                 app:layout_constraintStart_toEndOf="@id/slot1"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageButton
-                android:elevation="0dp"
                 android:id="@+id/slot3"
-                android:layout_width="125dp"
-                android:layout_height="125dp"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
                 android:backgroundTint="@android:color/white"
+                android:elevation="0dp"
                 android:tint="#FFE4C6"
+                app:layout_constraintBottom_toTopOf="@+id/slot6"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@id/slot2"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageButton
-                android:layout_marginVertical="10dp"
-                android:elevation="0dp"
                 android:id="@+id/slot4"
-                android:layout_width="125dp"
-                android:layout_height="125dp"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginVertical="5dp"
                 android:backgroundTint="@android:color/white"
+                android:elevation="0dp"
                 android:tint="#FFE4C6"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/slot1"
                 app:layout_constraintStart_toStartOf="@+id/slot1"
                 app:layout_constraintTop_toBottomOf="@+id/slot1" />
 
             <ImageButton
-                android:layout_marginVertical="10dp"
-                android:elevation="0dp"
                 android:id="@+id/slot5"
-                android:layout_width="125dp"
-                android:layout_height="125dp"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginVertical="5dp"
                 android:backgroundTint="@android:color/white"
+                android:elevation="0dp"
                 android:tint="#FFE4C6"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/slot2"
                 app:layout_constraintStart_toStartOf="@+id/slot2"
                 app:layout_constraintTop_toBottomOf="@+id/slot2" />
 
             <ImageButton
-                android:layout_marginVertical="10dp"
-                android:elevation="0dp"
                 android:id="@+id/slot6"
-                android:layout_width="125dp"
-                android:layout_height="125dp"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginVertical="5dp"
                 android:backgroundTint="@android:color/white"
+                android:elevation="0dp"
                 android:tint="#FFE4C6"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/slot3"
                 app:layout_constraintStart_toStartOf="@+id/slot3"
                 app:layout_constraintTop_toBottomOf="@+id/slot3" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#FFE4C6"
+            app:layout_constraintBottom_toBottomOf="@+id/constraintLayout1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
