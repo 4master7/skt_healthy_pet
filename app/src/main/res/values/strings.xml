@@ -45,11 +45,12 @@
     <string name="walking" translatable="false">걷기(소음주의)</string>
     <string name="lunge" translatable="false">런지</string>
     <string name="burpee" translatable="false">버피(소음주의)</string>
-    <string name="reword1" translatable="false">보물 상자를 눌러보상을 얻으세요</string>
+    <string name="reword1" translatable="false">보물 상자를 눌러 보상을 얻으세요</string>
     <string name="coins" translatable="false">원</string>
     <string name="get" translatable="false">원을 얻었습니다</string>
     <string name="test1" translatable="false">돈 증감</string>
     <string name="test2" translatable="false">레벨 증감</string>
     <string name="StringValue" translatable="false">이미지가 열리지 않습니다.</string>
     <string name="backmore" trasnlatable="false">\'뒤로\'버튼을 한번 더 누르시면 종료됩니다.</string>
+    <string name="initialization" trasnlatable="false">앱 초기화</string>
 </resources>

@@ -57,4 +57,5 @@
     <string name="test2" translatable="false">Level up</string>
 
     <string name="backmore" trasnlatable="false">Press the back button one more time to exit.</string>
+    <string name="initialization" trasnlatable="false">App Initialization</string>
 </resources>
