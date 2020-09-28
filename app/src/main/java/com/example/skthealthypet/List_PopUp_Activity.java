@@ -29,7 +29,7 @@ public class List_PopUp_Activity extends AppCompatActivity {
     public void mOk(View v){//ok 버튼 클릭
         ListValues.mMyAdapter.deleteItem(ListValues.possi);
         ListValues.mMyAdapter.notifyDataSetChanged();
-        Toast.makeText(this, "삭제하였습니다!", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, getString(R.string.deleted), Toast.LENGTH_SHORT).show();
         final SharedPreferences pref = getSharedPreferences("ListInventory" , Activity.MODE_PRIVATE);
         final SharedPreferences.Editor editor = pref.edit();
         editor.remove("NAME_"+ListValues.possi);
@@ -52,7 +52,7 @@ public class List_PopUp_Activity extends AppCompatActivity {
 
     }
     public void mCancle(View v){//cancle 버튼 클릭
-        Toast.makeText(this, "취소하였습니다!", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, getString(R.string.cancelled), Toast.LENGTH_SHORT).show();
         finish();
     }
     @Override

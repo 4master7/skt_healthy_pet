@@ -1,16 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">skt healthy pet</string>
-    <string name="ranking" translatable="false">ranking</string>
-    <string name="dogbutton" translatable="false">dog</string>
-    <string name="catbutton" translatable="false">cat</string>
-    <string name="announce">Notification</string>
-    <string name="add">Add</string>
-    <string name="sure_delete">Are you sure to delete it?</string>
-    <string name="sure_complete">Are you sure to complete it?</string>
-    <string name="ok">ok</string>
-    <string name="cancle">cancle</string>
-    <string name="write_here_name">Enter a title here.</string>
-    <string name="write_here_content">Enter a content here.</string>
-    <string name="isdaily">Do you do it every day?</string>
+    <string name="name" translatable="false">Enter your pet\'s name here</string>
+    <string name="age" translatable="false">Enter your age here</string>
+    <string name="high" translatable="false">Enter your height here</string>
+    <string name="kg" translatable="false">Enter your weight here</string>
+    <string name="steps" translatable="false">Number of steps</string>
+    <string name="ranking" translatable="false">Ranking</string>
+    <string name="dogbutton" translatable="false">Dog</string>
+    <string name="catbutton" translatable="false">Cat</string>
+    <string name="announce" translatable="false">Notification</string>
+    <string name="add" translatable="false">Add</string>
+    <string name="sure_delete" translatable="false">Are you sure to delete it?</string>
+    <string name="sure_complete" translatable="false">Are you sure to complete it?</string>
+    <string name="ok" translatable="false">OK</string>
+    <string name="cancel" translatable="false">Cancel</string>
+    <string name="write_here_name" translatable="false">Enter a title here</string>
+    <string name="write_here_content" translatable="false">Enter a content here</string>
+    <string name="isdaily" translatable="false">Do you do it every day?</string>
+    <string name="reward" translatable="false">get rewarded</string>
+    <string name="com" translatable="false">Complete</string>
+    <string name="shop" translatable="false">shop</string>
+    <string name="enterinformation" translatable="false">" Re-enter information"</string>
+    <string name="added" translatable="false">Added!</string>
+    <string name="cancelled" translatable="false">Cancelled!</string>
+    <string name="deleted" translatable="false">Deleted!</string>
+    <string name="completed" translatable="false">Completed!</string>
+    <string name="fiilall" translatable="false">Fill it all up!</string>
+    <string name="buy" translatable="false">Purchase</string>
+    <string name="buy_confirm" translatable="false">Are you sure to purchase it?</string>
+    <string name="yes" translatable="false">Yes</string>
+    <string name="no" translatable="false">No</string>
+    <string name="bought" translatable="false">Purchased!</string>
+    <string name="already" translatable="false">This item is already in your possession!</string>
+    <string name="nomoney" translatable="false">You don\'t have enough money.</string>
+    <string name="use" translatable="false">Are you sure to use it?</string>
+    <string name="used" translatable="false">Applied!</string>
+    <string name="usebtn" translatable="false">Use</string>
+
+    <string name="exercise" translatable="false">Recommended Exercise</string>
+    <string name="squat" translatable="false">Squat</string>
+    <string name="pushup" translatable="false">Push-up</string>
+    <string name="plank" translatable="false">Plank</string>
+    <string name="walking" translatable="false">Walking(Noise Caution)</string>
+    <string name="lunge" translatable="false">Lunge</string>
+    <string name="burpee" translatable="false">burpee(Noise Caution)</string>
+
+    <string name="StringValue" translatable="false">Image won\'t open.</string>
+    <string name="get" translatable="false">GET!!!</string>
+    <string name="reword1" translatable="false">Tap the treasure chest to earn rewards</string>
+
+    <string name="coins" translatable="false">coins</string>
+
+
+    <string name="test1" translatable="false">Money increase</string>
+    <string name="test2" translatable="false">Level up</string>
+
+    <string name="backmore" trasnlatable="false">Press the back button one more time to exit.</string>
+    <string name="initialization" trasnlatable="false">App Initialization</string>
 </resources>

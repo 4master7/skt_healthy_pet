@@ -37,7 +37,7 @@ public class List_AddPopUp_Activity extends AppCompatActivity {
         if(!inName.isEmpty()&&!inContent.isEmpty()){
             ListValues.p++;
             ListValues.mMyAdapter.addItem(inName,inContent,isDaily.isChecked());
-            Toast.makeText(this, "추가하였습니다!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.added), Toast.LENGTH_SHORT).show();
             final SharedPreferences pref = getSharedPreferences("ListInventory" , Activity.MODE_PRIVATE);
             final SharedPreferences.Editor editor = pref.edit();
             ListValues.SaveInfo(inName,inContent,isDaily.isChecked(),ListValues.p,editor);
@@ -46,10 +46,10 @@ public class List_AddPopUp_Activity extends AppCompatActivity {
             finish();
         }
         else
-            Toast.makeText(this, "모두 채워주세요!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.fiilall), Toast.LENGTH_SHORT).show();
     }
     public void m1Cancle(View v){//cancle 버튼 클릭
-        Toast.makeText(this, "취소하였습니다!", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, getString(R.string.cancelled), Toast.LENGTH_SHORT).show();
         finish();
     }
 

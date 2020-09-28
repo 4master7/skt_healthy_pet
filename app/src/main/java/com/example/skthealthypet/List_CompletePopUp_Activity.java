@@ -27,7 +27,7 @@ public class List_CompletePopUp_Activity extends AppCompatActivity {
     }
 
     public void mOk(View v){
-        Toast.makeText(this, "완료하였습니다!", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, getString(R.string.completed), Toast.LENGTH_SHORT).show();
         if(ListValues.IS==false) {
             ListValues.mMyAdapter.deleteItem(ListValues.possi);
             ListValues.mMyAdapter.notifyDataSetChanged();
@@ -50,15 +50,19 @@ public class List_CompletePopUp_Activity extends AppCompatActivity {
             editor.putInt("Index", pref.getInt("Index", 0) - 1);
             editor.commit();
         }
-        final SharedPreferences p = getSharedPreferences("Inventory", Activity.MODE_PRIVATE);
-        final SharedPreferences.Editor e = p.edit();
-        e.putInt("money", p.getInt("money", 0)+10000);
+        SharedPreferences p = getSharedPreferences("Inventory", Activity.MODE_PRIVATE);
+        SharedPreferences.Editor e = p.edit();
+        SharedPreferences p2 = getSharedPreferences("Infomation", Activity.MODE_PRIVATE);
+        SharedPreferences.Editor e2 = p2.edit();
+        e.putInt("money", p.getInt("money", 0)+3);
+        e2.putInt("exp",p2.getInt("exp",0)+1);
         e.commit();
+        e2.commit();
         finish();
 
     }
     public void mCancle(View v){
-        Toast.makeText(this, "취소하였습니다!", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, getString(R.string.cancelled), Toast.LENGTH_SHORT).show();
         finish();
     }
     @Override

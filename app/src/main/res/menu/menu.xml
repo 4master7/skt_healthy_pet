@@ -3,36 +3,37 @@
     <item
         android:id="@+id/first"
         android:enabled="true"
-        android:title="펫"
-        android:icon="@drawable/ic_launcher_background">
+        android:title=""
+        android:icon="@drawable/homeicon">
 
     </item>
     <item
         android:id="@+id/second"
         android:enabled="true"
-        android:title="만보기"
-        android:icon="@drawable/ic_launcher_background">
+        android:title=""
+        android:icon="@drawable/pedometericon">
 
     </item>
     <item
         android:id="@+id/third"
         android:enabled="true"
-        android:title="추천운동"
+        android:title=""
         android:icon="@drawable/ic_launcher_background">
 
+        
     </item>
     <item
         android:id="@+id/four"
         android:enabled="true"
-        android:title="스케줄"
-        android:icon="@drawable/ic_launcher_background">
+        android:title=""
+        android:icon="@drawable/scheduleicon">
 
     </item>
     <item
         android:id="@+id/fifth"
         android:enabled="true"
-        android:title="메뉴"
-        android:icon="@drawable/ic_launcher_background">
+        android:title=""
+        android:icon="@drawable/menuicon">
 
     </item>
 </menu>

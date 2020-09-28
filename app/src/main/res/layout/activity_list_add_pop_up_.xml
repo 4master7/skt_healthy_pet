@@ -1,89 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="#eeeeee"
-    android:orientation="vertical"
     android:layout_width="300dp"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:background="#eeeeee"
+    android:orientation="vertical">
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <TextView
-            android:id="@+id/titleTV"
-            android:text="운동 추가"
-            android:textSize="28sp"
-            android:gravity="center"
-            android:textColor="#fff"
-            android:background="@color/colorPrimary"
-            android:layout_width="match_parent"
-            android:layout_height="53dp"/>
-    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="24dp"
-        android:orientation="vertical">
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/titleTV"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:background="@color/colorPrimary"
+            android:fontFamily="@font/apple_sd_gothic_neo_r"
+            android:gravity="center"
+            android:text="@string/add"
+            android:textColor="#fff"
+            android:textSize="28sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
         <EditText
             android:id="@+id/editname"
-            android:textSize="20sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="#000"
-            android:hint="이곳에 제목을 입력하세요"
-            android:textStyle="bold"
+            android:layout_marginBottom="3dp"
+            android:fontFamily="@font/apple_sd_gothic_neo_r"
             android:gravity="center"
-            android:layout_marginBottom="3dp"/>
+            android:hint="@string/write_here_name"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
         <EditText
             android:id="@+id/editcontent"
-            android:textSize="20sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="#000"
-            android:hint="이곳에 내용을 입력하세요"
+            android:layout_marginBottom="3dp"
+            android:fontFamily="@font/apple_sd_gothic_neo_r"
             android:gravity="center"
-            android:layout_marginBottom="3dp"/>
+            android:hint="@string/write_here_content"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
         <LinearLayout
-            android:orientation="horizontal"
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="right">
+            android:gravity="right"
+            android:orientation="horizontal">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="일상 루틴인가요?"
-                android:textSize="18sp"
+                android:fontFamily="@font/apple_sd_gothic_neo_r"
                 android:gravity="center"
-                android:textColor="#000"/>
+                android:text="@string/isdaily"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
             <CheckBox
                 android:id="@+id/isDaily"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"/>
+                android:layout_height="match_parent" />
         </LinearLayout>
     </LinearLayout>
+
     <View
         android:layout_width="match_parent"
-        android:layout_height="1dp"/>
+        android:layout_height="1dp" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center">
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
 
         <Button
+            android:id="@+id/okBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="확인"
-            android:textSize="20sp"
-            android:id="@+id/okBtn"
-            android:onClick="m1Ok"/>
+            android:layout_marginRight="5dp"
+            android:background="@drawable/ok_or_cancle_btn"
+            android:fontFamily="@font/apple_sd_gothic_neo_r"
+            android:onClick="m1Ok"
+            android:text="@string/ok"
+            android:textSize="20sp" />
 
         <Button
             android:id="@+id/cancleBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/ok_or_cancle_btn"
+            android:fontFamily="@font/apple_sd_gothic_neo_r"
             android:onClick="m1Cancle"
-            android:text="취소"
+            android:text="@string/cancel"
             android:textSize="20sp" />
 
     </LinearLayout>

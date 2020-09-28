@@ -6,6 +6,7 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:fontFamily">@font/apple_sd_gothic_neo_r</item>
+        <item name="android:textSize">25sp</item>
     </style>
 
     <style name="popupTheme" parent="Theme.AppCompat.Light.Dialog">
@@ -16,6 +17,10 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
 
+    </style>
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">26sp</item>
     </style>
 
 

@@ -1,16 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">skt healthy pet</string>
+    <string name="name" translatable="false">펫의 이름을 입력해주세요</string>
+    <string name="age" translatable="false">나이를 입력해주세요</string>
+    <string name="high" translatable="false">키를 입력해주세요</string>
+    <string name="kg" translatable="false">몸무게를 입력해주세요</string>
+    <string name="steps" translatable="false">걸음수</string>
     <string name="ranking" translatable="false">랭킹</string>
     <string name="dogbutton" translatable="false">강아지</string>
     <string name="catbutton" translatable="false">고양이</string>
-    <string name="announce">알림</string>
-    <string name="add">추가</string>
-    <string name="sure_delete">삭제하시겠습니까?</string>
-    <string name="sure_complete">완료하시겠습니까?</string>
-    <string name="ok">확인</string>
-    <string name="cancle">취소</string>
-    <string name="write_here_name">이곳에 제목을 입력하세요</string>
-    <string name="write_here_content">이곳에 내용을 입력하세요</string>
-    <string name="isdaily">일상 루틴인가요?</string>
+    <string name="announce" translatable="false">알림</string>
+    <string name="add" translatable="false">추가</string>
+    <string name="sure_delete" translatable="false">삭제하시겠습니까?</string>
+    <string name="sure_complete" translatable="false">완료하시겠습니까?</string>
+    <string name="ok" translatable="false">확인</string>
+    <string name="cancel" translatable="false">취소</string>
+    <string name="write_here_name" translatable="false">이곳에 제목을 입력하세요</string>
+    <string name="write_here_content" translatable="false">이곳에 내용을 입력하세요</string>
+    <string name="isdaily" translatable="false">일상 루틴인가요?</string>
+    <string name="com" translatable="false">완료</string>
+    <string name="enterinformation" translatable="false">정보 다시입력</string>
+    <string name="reward" translatable="false">보상받기</string>
+    <string name="shop" translatable="false">상점</string>
+    <string name="added" translatable="false">추가하였습니다!</string>
+    <string name="cancelled" translatable="false">취소하였습니다!</string>
+    <string name="deleted" translatable="false">삭제하였습니다!</string>
+    <string name="completed" translatable="false">완료하였습니다!</string>
+    <string name="fiilall" translatable="false">모두 채워주세요!</string>
+    <string name="buy" translatable="false">구매</string>
+    <string name="buy_confirm" translatable="false">구매하시겠습까?</string>
+    <string name="yes" translatable="false">예</string>
+    <string name="no" translatable="false">아니오</string>
+    <string name="bought" translatable="false">구매하였습니다!</string>
+    <string name="already" translatable="false">이미 소지하고 계신 아이템입니다!</string>
+    <string name="nomoney" translatable="false">돈이 부족합니다!</string>
+    <string name="use" translatable="false">적용하시겠습니까?</string>
+    <string name="used" translatable="false">적용하였습니다!</string>
+    <string name="usebtn" translatable="false">적용</string>
+
+    <string name="exercise" translatable="false">헬시펫이 추천하는 운동</string>
+    <string name="squat" translatable="false">스쿼트</string>
+    <string name="pushup" translatable="false">팔굽혀펴기</string>
+    <string name="plank" translatable="false">플랭크</string>
+    <string name="walking" translatable="false">걷기(소음주의)</string>
+    <string name="lunge" translatable="false">런지</string>
+    <string name="burpee" translatable="false">버피(소음주의)</string>
+
+    <string name="StringValue" translatable="false">이미지가 열리지 않습니다.</string>
+    <string name="reword1" translatable="false">보물 상자를 눌러 보상을 얻으세요</string>
+    <string name="coins" translatable="false">원</string>
+    <string name="get" translatable="false">원을 얻었습니다</string>
+    <string name="test1" translatable="false">돈 증감</string>
+    <string name="test2" translatable="false">레벨 증감</string>
+
+    <string name="backmore" trasnlatable="false">\'뒤로\'버튼을 한번 더 누르시면 종료됩니다.</string>
+    <string name="initialization" trasnlatable="false">앱 초기화</string>
 </resources>
