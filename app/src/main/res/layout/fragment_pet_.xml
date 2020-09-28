@@ -8,125 +8,142 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
-        <ImageView
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/con1"
             android:layout_width="match_parent"
-            android:layout_height="180dp"
+            android:layout_height="0dp"
+            app:layout_constraintVertical_weight="1"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
-            android:background="@color/colorPrimary"/>
+            android:background="@color/colorPrimary">
 
             <TextView
                 android:id="@+id/petname"
-                android:layout_width="184dp"
-                android:layout_height="77dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginLeft="10dp"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
                 android:fontFamily="@font/apple_sd_gothic_neo_r"
                 android:gravity="center"
-                android:text=""
-                android:textColor="#000000"
-                app:layout_constraintEnd_toStartOf="@+id/info"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintHorizontal_chainStyle="packed"
+                android:textColor="@android:color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="3:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.05"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.15"
+                app:layout_constraintWidth_percent="0.45" />
 
             <TextView
                 android:id="@+id/info"
-                android:layout_width="200dp"
-                android:layout_height="80dp"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
                 android:background="@drawable/xpbar"
                 android:fontFamily="@font/apple_sd_gothic_neo_r"
                 android:gravity="center"
-
                 android:textColor="@android:color/black"
-                app:layout_constraintBottom_toBottomOf="@+id/petname"
-                app:layout_constraintHorizontal_chainStyle="packed"
-                app:layout_constraintLeft_toRightOf="@+id/petname"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/petname" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="3:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.95"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.15"
+                app:layout_constraintWidth_percent="0.45" />
 
             <ImageView
                 android:id="@+id/coin"
-                android:layout_width="55dp"
-                android:layout_height="55dp"
-                android:layout_marginTop="20dp"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
                 android:background="@drawable/coin"
-                android:contentDescription="StringValue"
-                app:layout_constraintEnd_toStartOf="@+id/cointext"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/petname"/>
-
-            <TextView
-                android:id="@+id/cointext"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginLeft="55dp"
-                android:background="@drawable/coins"
                 android:fontFamily="@font/apple_sd_gothic_neo_r"
                 android:gravity="center"
                 android:textColor="@android:color/white"
-                app:layout_constraintBottom_toBottomOf="@+id/coin"
-                app:layout_constraintLeft_toRightOf="@+id/coin"
-                app:layout_constraintTop_toTopOf="@+id/coin"/>
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="1"
+                app:layout_constraintEnd_toStartOf="@+id/cointext"
+                app:layout_constraintHorizontal_bias="0.9"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/info"
+                app:layout_constraintVertical_bias="0.5"
+                app:layout_constraintWidth_percent="0.15" />
 
+            <TextView
+                android:id="@+id/cointext"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:fontFamily="@font/apple_sd_gothic_neo_r"
+                android:gravity="center"
+                android:background="@drawable/coins"
+                android:textColor="@android:color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="6:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.90"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/info"
+                app:layout_constraintVertical_bias="0.5"
+                app:layout_constraintWidth_percent="0.80" />
 
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <ImageView
-            android:id="@+id/home"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ROOM"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="200dp"
-            android:layout_marginBottom="40dp"
+            android:layout_height="0dp"
+            app:layout_constraintVertical_weight="2"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/petroom"
             android:contentDescription="StringValue"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintTop_toBottomOf="@id/con1"
+            app:layout_constraintVertical_bias="1.0">
 
-        <ImageView
-            android:id="@+id/GAGU"
-            android:layout_width="210dp"
-            android:layout_height="306dp"
-            android:contentDescription="StringValue"
-            app:layout_constraintBottom_toBottomOf="@+id/home"
-            app:layout_constraintEnd_toEndOf="@+id/home"
-            app:layout_constraintHorizontal_bias="0.139"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/home"
-            app:layout_constraintTop_toTopOf="@+id/home"
-            app:layout_constraintVertical_bias="0.132"/>
+            <ImageView
+                android:id="@+id/GAGU"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="20dp"
+                android:contentDescription="StringValue"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="2:3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.05"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintWidth_percent="0.45" />
 
-        <ImageView
-            android:id="@+id/BED"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:contentDescription="StringValue"
-            app:layout_constraintBottom_toBottomOf="@+id/home"
-            app:layout_constraintEnd_toEndOf="@+id/home"
-            app:layout_constraintHorizontal_bias="0.954"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/home"
-            app:layout_constraintVertical_bias="0.963"/>
+            <ImageView
+                android:id="@+id/BED"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:contentDescription="StringValue"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.95"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintWidth_percent="0.55" />
 
-        <ImageView
-            android:id="@+id/Pet"
-            android:layout_width="209dp"
-            android:layout_height="215dp"
-            android:layout_marginBottom="44dp"
-            android:contentDescription="StringValue"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.93"
-            app:layout_constraintStart_toStartOf="parent"/>
+            <ImageView
+                android:id="@+id/Pet"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="55dp"
+                android:contentDescription="StringValue"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintWidth_percent="0.45" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        >
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 
 </FrameLayout>

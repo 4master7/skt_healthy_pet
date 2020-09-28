@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
 
 import com.bumptech.glide.Glide;
@@ -36,15 +37,17 @@ public class Pet_Fragment extends Fragment {
         ImageView GAGU = v.findViewById(R.id.GAGU);
         ImageView BED = v.findViewById(R.id.BED);
         ImageView PET = v.findViewById(R.id.Pet);
+        ConstraintLayout ROOM = v.findViewById(R.id.ROOM);
         if (pref2.getInt("exp", 0) >= 500) {
             SharedPreferences.Editor e = pref2.edit();
             e.putInt("level", pref2.getInt("level", 0) + 1);
             e.putInt("exp", pref2.getInt("exp", 0) - 500);
             e.commit();
         }
-        INFO_VIEW.setText(String.valueOf(pref2.getInt("level", 0)) + " Lv  " + String.valueOf(pref2.getInt("exp", 0)) + "/500");
+        INFO_VIEW.setText(String.valueOf("Lv "+pref2.getInt("level", 0)) +"   "+ String.valueOf(pref2.getInt("exp", 0)) + "/500");
         NAME_VIEW.setText(pref2.getString("PetName", "ERROR"));
 
+       // ROOM.setBackgroundResource(R.drawable.w1_4);
 
         if(pref2.getInt("DogOrCat",0)==1){
             NAME_VIEW.setBackgroundResource(R.drawable.dogname);

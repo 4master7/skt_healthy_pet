@@ -21,7 +21,7 @@
     <string name="reward" translatable="false">get rewarded</string>
     <string name="com" translatable="false">Complete</string>
     <string name="shop" translatable="false">shop</string>
-    <string name="enterinformation" translatable="false">" Re-enter information"</string>
+    <string name="enterinformation" translatable="false">"Re-enter information"</string>
     <string name="added" translatable="false">Added!</string>
     <string name="cancelled" translatable="false">Cancelled!</string>
     <string name="deleted" translatable="false">Deleted!</string>
