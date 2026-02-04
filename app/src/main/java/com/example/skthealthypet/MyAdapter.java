@@ -1,19 +1,19 @@
 package com.example.skthealthypet;
 
-import android.content.Context;
-import android.os.Build;
-import android.util.Log;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.BaseAdapter;
-import android.widget.ImageButton;
-import android.widget.LinearLayout;
-import android.widget.TextView;
+        import android.content.Context;
+        import android.os.Build;
+        import android.util.Log;
+        import android.view.LayoutInflater;
+        import android.view.View;
+        import android.view.ViewGroup;
+        import android.widget.BaseAdapter;
+        import android.widget.ImageButton;
+        import android.widget.LinearLayout;
+        import android.widget.TextView;
 
-import androidx.core.content.ContextCompat;
+        import androidx.core.content.ContextCompat;
 
-import java.util.ArrayList;
+        import java.util.ArrayList;
 
 public class MyAdapter extends BaseAdapter{
 
@@ -49,11 +49,11 @@ public class MyAdapter extends BaseAdapter{
         }
 
         /* 'listview_custom'에 정의된 위젯에 대한 참조 획득 */
-        TextView tv_name = (TextView) convertView.findViewById(R.id.tv_name) ;
-        TextView tv_contents = (TextView) convertView.findViewById(R.id.tv_contents) ;
-        ImageButton DelBtn = (ImageButton) convertView.findViewById(R.id.deletebtn) ;
-        ImageButton ComBtn = (ImageButton) convertView.findViewById(R.id.completebtn) ;
-        LinearLayout BackGround = (LinearLayout) convertView.findViewById(R.id.listBG);
+        TextView tv_name =  convertView.findViewById(R.id.tv_name) ;
+        TextView tv_contents =  convertView.findViewById(R.id.tv_contents) ;
+        ImageButton DelBtn =  convertView.findViewById(R.id.deletebtn) ;
+        ImageButton ComBtn =  convertView.findViewById(R.id.completebtn) ;
+        LinearLayout BackGround =  convertView.findViewById(R.id.listBG);
         /* 각 리스트에 뿌려줄 아이템을 받아오는데 mMyItem 재활용 */
         final MyItem myItem = getItem(position);
 
@@ -78,20 +78,14 @@ public class MyAdapter extends BaseAdapter{
 
 
         /* (위젯에 대한 이벤트리스너)  */
-        ComBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ListValues OnCom = new ListValues();
-                OnCom.onComplete(myItem.getIsDaily());
-            }
+        ComBtn.setOnClickListener(v -> {
+            ListValues OnCom = new ListValues();
+            OnCom.onComplete(myItem.getIsDaily(),position);
         });
 
-        DelBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ListValues OnDel = new ListValues();
-                OnDel.onDelete(position);
-            }
+        DelBtn.setOnClickListener(v -> {
+            ListValues OnDel = new ListValues();
+            OnDel.onDelete(position);
         });
 
         return convertView;
@@ -101,7 +95,7 @@ public class MyAdapter extends BaseAdapter{
         void onDelete(int Position);
     }
     public interface onItemComplete{
-        void onComplete(boolean isD);
+        void onComplete(boolean isD, int Position);
     }
 
     /* 아이템 데이터 추가를 위한 함수.*/

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "944492302652",
+    "firebase_url": "https://healthypet-3cee6.firebaseio.com",
+    "project_id": "healthypet-3cee6",
+    "storage_bucket": "healthypet-3cee6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:944492302652:android:8b687348d920a355278e39",
+        "android_client_info": {
+          "package_name": "com.example.skthealthypet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "944492302652-quk3ibfe1s2lg4efvvuin63lahbebd14.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.skthealthypet",
+            "certificate_hash": "2337d38abca8e32c6f981338555de8d11bf31550"
+          }
+        },
+        {
+          "client_id": "944492302652-s1qs7d37dpitardf998k2tgss4m2blo8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0sm_Meyklw25fv3coo-qD_fxBn3PxSok"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "944492302652-s1qs7d37dpitardf998k2tgss4m2blo8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

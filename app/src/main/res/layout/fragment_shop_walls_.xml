@@ -6,18 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".Shop_Walls_Fragment">
 
-    <TextView
-        android:id="@+id/MoneyView"
-        android:layout_width="150dp"
-        android:layout_height="70dp"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.05"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.02" />
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
         android:layout_width="wrap_content"
@@ -36,14 +24,14 @@
             android:layout_height="101dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:tint="@android:color/white" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/NameView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="50dp"
+            android:fontFamily="@font/apple_sd_gothic_neo_r"
             android:text="가구 이름"
             android:textColor="@android:color/black"
             android:textSize="20sp"
@@ -56,9 +44,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginVertical="2dp"
+            android:fontFamily="@font/apple_sd_gothic_neo_r"
             android:text="간단 설명"
             android:textColor="@android:color/black"
-            android:textSize="14dp"
+            android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="@+id/NameView"
             app:layout_constraintStart_toStartOf="@+id/NameView"
             app:layout_constraintTop_toBottomOf="@+id/NameView" />
@@ -67,6 +56,7 @@
             android:id="@+id/PriceView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/apple_sd_gothic_neo_r"
             android:text="가격"
             android:textColor="@android:color/black"
             android:textSize="18sp"
@@ -80,9 +70,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#FCC372"
-            android:text="구입"
+            android:fontFamily="@font/apple_sd_gothic_neo_r"
+            android:text="@string/buy"
             android:textColor="@android:color/black"
-            android:textSize="18dp"
+            android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/PriceView"
             app:layout_constraintStart_toStartOf="@+id/PriceView" />
@@ -104,7 +95,9 @@
             android:layout_height="wrap_content"
             android:background="@drawable/strokewhite"
             android:elevation="0dp"
-            android:text="Beds"
+            android:fontFamily="@font/apple_sd_gothic_neo_r"
+            android:text="Bed"
+            android:textSize="18sp"
             app:layout_constraintEnd_toStartOf="@+id/gotocloset"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -115,20 +108,11 @@
             android:layout_height="wrap_content"
             android:background="@drawable/strokewhite"
             android:elevation="0dp"
-            android:text="Closets"
-            app:layout_constraintEnd_toStartOf="@id/gotocloth"
-            app:layout_constraintStart_toEndOf="@+id/gotobed"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <Button
-            android:id="@+id/gotocloth"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/strokewhite"
-            android:elevation="0dp"
-            android:text="Clothes"
+            android:fontFamily="@font/apple_sd_gothic_neo_r"
+            android:text="Furniture"
+            android:textSize="15sp"
             app:layout_constraintEnd_toStartOf="@id/gotofloor"
-            app:layout_constraintStart_toEndOf="@+id/gotocloset"
+            app:layout_constraintStart_toEndOf="@+id/gotobed"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
@@ -137,9 +121,11 @@
             android:layout_height="wrap_content"
             android:background="@drawable/strokewhite"
             android:elevation="0dp"
-            android:text="Floors"
+            android:fontFamily="@font/apple_sd_gothic_neo_r"
+            android:text="Floor"
+            android:textSize="18sp"
             app:layout_constraintEnd_toStartOf="@id/gotohat"
-            app:layout_constraintStart_toEndOf="@+id/gotocloth"
+            app:layout_constraintStart_toEndOf="@+id/gotocloset"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
@@ -148,7 +134,9 @@
             android:layout_height="wrap_content"
             android:background="@drawable/strokewhite"
             android:elevation="0dp"
-            android:text="Hats"
+            android:fontFamily="@font/apple_sd_gothic_neo_r"
+            android:text="Hat"
+            android:textSize="18sp"
             app:layout_constraintEnd_toStartOf="@id/gotowall"
             app:layout_constraintStart_toEndOf="@+id/gotofloor"
             app:layout_constraintTop_toTopOf="parent" />
@@ -159,7 +147,9 @@
             android:layout_height="wrap_content"
             android:background="@drawable/strokedark"
             android:elevation="0dp"
-            android:text="Walls"
+            android:fontFamily="@font/apple_sd_gothic_neo_r"
+            android:text="Wall"
+            android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/gotohat"
             app:layout_constraintTop_toTopOf="parent" />
@@ -179,7 +169,7 @@
                 android:id="@+id/slot1"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:backgroundTint="@android:color/white"
+                android:background="@drawable/w1"
                 android:elevation="0dp"
                 android:tint="#FFE4C6"
                 app:layout_constraintBottom_toTopOf="@+id/slot4"
@@ -193,7 +183,7 @@
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_marginHorizontal="10dp"
-                android:backgroundTint="@android:color/white"
+                android:background="@drawable/w2"
                 android:elevation="0dp"
                 android:tint="#FFE4C6"
                 app:layout_constraintBottom_toTopOf="@+id/slot5"
@@ -205,7 +195,7 @@
                 android:id="@+id/slot3"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:backgroundTint="@android:color/white"
+                android:background="@drawable/w3"
                 android:elevation="0dp"
                 android:tint="#FFE4C6"
                 app:layout_constraintBottom_toTopOf="@+id/slot6"
@@ -218,7 +208,7 @@
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_marginVertical="5dp"
-                android:backgroundTint="@android:color/white"
+                android:background="@drawable/w4"
                 android:elevation="0dp"
                 android:tint="#FFE4C6"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -231,7 +221,7 @@
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_marginVertical="5dp"
-                android:backgroundTint="@android:color/white"
+                android:backgroundTint="#FFE4C6"
                 android:elevation="0dp"
                 android:tint="#FFE4C6"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -244,7 +234,7 @@
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_marginVertical="5dp"
-                android:backgroundTint="@android:color/white"
+                android:backgroundTint="#FFE4C6"
                 android:elevation="0dp"
                 android:tint="#FFE4C6"
                 app:layout_constraintBottom_toBottomOf="parent"

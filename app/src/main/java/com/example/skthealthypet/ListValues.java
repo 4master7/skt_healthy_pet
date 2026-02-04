@@ -26,8 +26,9 @@ public class ListValues extends AppCompatActivity implements MyAdapter.onItemDel
     }
 
     @Override
-    public void onComplete(boolean isD) {
-        IS=isD;
+    public void onComplete(boolean isD, int Position) {
+        IS = isD;
+        possi = Position;
         (List_Main_Fragment.mCon).startActivity(new Intent(List_Main_Fragment.mCon, List_CompletePopUp_Activity.class));
     }
 }

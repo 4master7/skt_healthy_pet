@@ -3,12 +3,15 @@
     package="com.example.skthealthypet">
 
     <application
+
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".FireStoreTestActivity"></activity>
+        <activity android:name=".Ranking_Activity" />
         <activity
             android:name=".List_CompletePopUp_Activity"
             android:screenOrientation="fullSensor"
@@ -21,7 +24,6 @@
             android:name=".List_AddPopUp_Activity"
             android:screenOrientation="fullSensor"
             android:theme="@style/popupTheme" />
-
         <activity android:name=".Loding_Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -33,6 +35,5 @@
         <activity android:name=".Choice_Activity" />
         <activity android:name=".MainActivity" />
     </application>
-
 
 </manifest>
